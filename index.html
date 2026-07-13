@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Convite Especial · Pico do Jaraguá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- camada principal -->
+  <div id="app" class="app">
+    <!-- TELA INICIAL (cartão) -->
+    <div id="cardContainer" class="card-container">
+      <div class="card glass">
+        <div class="card-header">❤️</div>
+        <h2>Tenho um convite especial...</h2>
+        <p class="nome">Amor ❤️</p>
+        <p class="mensagem">
+          Queria te fazer um convite muito especial.<br><br>
+          Você aceita ir comigo conhecer o <strong>Pico do Jaraguá</strong> no dia <strong>01 de agosto</strong>?<br><br>
+          Prometo uma vista incrível, muitas risadas, fotos lindas,<br> 
+          um pôr do sol inesquecível e muitos beijinhos. ❤️🥰
+        </p>
+        <div class="botoes">
+          <button id="btnSim" class="btn sim">🟢 SIM ❤️</button>
+          <button id="btnNao" class="btn nao">🔴 NÃO 😢</button>
+        </div>
+        <div class="frases-romanticas" id="frasesContainer">
+          <!-- frases inseridas via JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- TELA DE CONFIRMAÇÃO (após SIM) -->
+    <div id="telaConfirmacao" class="tela-confirmacao hidden">
+      <div class="card glass confirm-card">
+        <h2>❤️ EU SABIA!!</h2>
+        <p>Você acabou de fazer meu dia muito mais feliz!</p>
+        <p>Mal posso esperar pelo nosso passeio no Pico do Jaraguá no dia 01 de agosto.</p>
+        <p>Tenho certeza de que será um dia cheio de risadas, fotos lindas e momentos que vamos guardar para sempre.</p>
+        <p class="te-amo">Te amo muito! ❤️🥰</p>
+        <div class="countdown" id="countdown">
+          <div><span id="dias">00</span> Dias</div>
+          <div><span id="horas">00</span> Horas</div>
+          <div><span id="minutos">00</span> Minutos</div>
+          <div><span id="segundos">00</span> Segundos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Elementos flutuantes: corações e partículas -->
+    <div id="floatingElements"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
